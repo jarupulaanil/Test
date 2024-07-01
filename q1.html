@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.WRITE A FUNCTION THAT TAKES A DATE OBJECT AS INPUT AND PERFORMS THE FOLLOWING OPERATIONS:
+a.GET THE CURRENT MONTH FROM THE DATE OBJECT.
+b.SET THE MONTH OF THE DATE OBJECT TO THE NEXT MONTH.
+c.SET THE DATE OF THE DATE OBJECT TO THE 15TH OF THE CURRENT MONTH.
+d.GET THE FULL YEAR OF THE ADJUSTED DATE OBJECT. -->
+
+<script>
+    var date = new Date();
+    function fun(date){
+        // current month from the date object
+        const current_month = date.getMonth();
+        console.log("current_month it starts from (0-11):"+current_month);
+        document.write("current_month it starts from (0-11): "+current_month+"<br>");
+
+
+        // SET THE MONTH OF THE DATE OBJECT TO THE NEXT MONTH.
+         date.setMonth(current_month+1);
+        console.log("next_month it starts from (0-11):"+date);
+        document.write("next_month it starts from (0-11): "+date+"<br>");
+
+        // SET THE DATE OF THE DATE OBJECT TO THE 15TH OF THE CURRENT MONTH.
+        date.setDate(15);
+        console.log("current_month date:"+date);
+        document.write("current_month: "+date+"<br>");
+
+
+
+    }
+    fun(date);
+
+
+</script>
+    
+</body>
+</html>
