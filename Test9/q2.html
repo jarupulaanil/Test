@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API </title>
+    <style>
+        #data {
+            margin-top: 20px;
+        }
+        .item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fetch API </h1>
+    <button onclick="fetchData()">Fetch Data</button>
+    <div id="data"></div>
+
+    <script>
+        function fetchData() {
+            fetch('https://dummyjson.com/products')
+                .then(response => {
+                    return response.json();
+                })
+                .then(data => displayData(data.products))
+                .catch(error => console.error('error:', error));
+        }
+
+        function displayData(products) {
+            var dataDiv = document.getElementById('data');
+            dataDiv.innerHTML = ''; 
+
+            products.forEach(function(product) {
+                var itemDiv = document.createElement('div');
+                itemDiv.className = 'item';
+                itemDiv.innerHTML = '<h5>' + product.title + '</h5><p>' + product.description + '</p>';
+                dataDiv.appendChild(itemDiv);
+            });
+        }
+    </script>
+</body>
+</html>

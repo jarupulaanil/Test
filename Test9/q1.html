@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX </title>
+    <style>
+        #data {
+            margin-top: 20px;
+        }
+        .item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+   
+    <button onclick="fetchData()">Fetch Data</button>
+    <div id="data"></div>
+
+    <script>
+        function fetchData() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
+
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    var data = JSON.parse(xhr.responseText);
+                    displayData(data);
+                } else {
+                    console.error('Request failed. Returned status of ' + xhr.status);
+                }
+            };
+
+            xhr.onerror = function() {
+                console.error('Request failed.');
+            };
+
+            xhr.send();
+        }
+
+        function displayData(data) {
+            var dataDiv = document.getElementById('data');
+            dataDiv.innerHTML = ''; 
+            data.forEach(function(item) {
+                var itemDiv = document.createElement('div');
+                itemDiv.className = 'item';
+                itemDiv.innerHTML = '<h2>' + item.title + '</h2><p>' + item.body + '</p>';
+                dataDiv.appendChild(itemDiv);
+            });
+        }
+    </script>
+</body>
+</html>
