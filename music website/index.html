@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Website</title>
+</head>
+<body>
+     
+    <header>
+        <div class="menuside">
+            <h1>PlayList</h1>
+            <!-- making the list of the songs -->
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>last Listening</h4>
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
+            </div>
+
+            <div class="menusongs">
+                <li class="songitem">
+                    <span>01</span>
+                    <img src="img/1.jpg" alt="">
+                    <h5>Nee Kallu Neeli Samudram <br>
+                        <div class="subtitle">Devi Sri Prasad</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="1"></i>
+                </li>
+
+                <li class="songitem">
+                    <span>02</span>
+                    <img src="img/2.jpg" alt="">
+                    <h5>Shailaja shailaja <br>
+                        <div class="subtitle">Devi Sri Prasad</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="2"></i>
+                </li>
+
+
+                <li class="songitem">
+                    <span>03</span>
+                    <img src="img/3.jpg" alt="">
+                    <h5>Samajaga varagamana <br>
+                        <div class="subtitle">Thaman</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="3"></i>
+                </li>
+
+                <li class="songitem">
+                    <span>04</span>
+                    <img src="img/4.jpg" alt="">
+                    <h5>I Wanna Fly <br>
+                        <div class="subtitle">Hipop Tamiza</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="4"></i>
+                </li>
+
+                <li class="songitem">
+                    <span>05</span>
+                    <img src="img/5.jpg" alt="">
+                    <h5>Chinnadana Neekosam <br>
+                        <div class="subtitle">Krishna Chaithnaya</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="5"></i>
+                </li>
+
+                <li class="songitem">
+                    <span>06</span>
+                    <img src="img/6.jpg" alt="">
+                    <h5>Oye..Oye.. <br>
+                        <div class="subtitle">Manisharama</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="6"></i>
+                </li>
+
+                <li class="songitem">
+                    <span>07</span>
+                    <img src="img/7.jpeg" alt="">
+                    <h5>Jigelu Rani <br>
+                        <div class="subtitle">Devi Sri Prasad</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="7"></i>
+                </li>
+
+                <li class="songitem">
+                    <span>08</span>
+                    <img src="img/8.jpg" alt="">
+                    <h5>Nenani Neevani <br>
+                        <div class="subtitle">Micky J Mayer</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="8"></i>
+                </li>
+
+                <li class="songitem">
+                    <span>09</span>
+                    <img src="img/9.jpg" alt="">
+                    <h5>Gajjulu Gjallumanaye <br>
+                        <div class="subtitle">Rp patnayak</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="9"></i>
+                </li>
+
+                <li class="songitem">
+                    <span>10</span>
+                    <img src="img/10.jpg" alt="">
+                    <h5>barbie dorasani <br>
+                        <div class="subtitle">Devi sri Prasad</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="10"></i>
+                </li>
+
+                <li class="songitem">
+                    <span>11</span>
+                    <img src="img/11.jpg" alt="">
+                    <h5>O priya <br>
+                        <div class="subtitle">Chandra Mohan</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="11"></i>
+                </li>
+
+                <li class="songitem">
+                    <span>12</span>
+                    <img src="img/12.png" alt="">
+                    <h5>Chitti<br>
+                        <div class="subtitle">jathiratnalu</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="12"></i>
+                </li>
+
+                <li class="songitem">
+                    <span>13</span>
+                    <img src="img/13.jpeg" alt="">
+                    <h5>Oke pariksahi raasina oke <br>
+                        <div class="subtitle">Devi Sri Prasad</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="13"></i>
+                </li>
+
+
+                <li class="songitem">
+                    <span>14</span>
+                    <img src="img/14.jpeg" alt="">
+                    <h5>Prema Deshapu YuvaRani <br>
+                        <div class="subtitle">Manisharama</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="14"></i>
+                </li>
+
+
+                <li class="songitem">
+                    <span>15</span>
+                    <img src="img/15.jpg" alt="">
+                    <h5>Saami Saami <br>
+                        <div class="subtitle">Devi Sri Prasad</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="15"></i>
+                </li>
+
+
+                <li class="songitem">
+                    <span>16</span>
+                    <img src="img/16.jpeg" alt="">
+                    <h5>Ninnele <br>
+                        <div class="subtitle">Justin Prabhakaran</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="16"></i>
+                </li>
+
+
+                <li class="songitem">
+                    <span>17</span>
+                    <img src="img/17.jpg" alt="">
+                    <h5>Naa Yadalo Chote Adagvadhu <br>
+                        <div class="subtitle">Yuvaan Shankar</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="17"></i>
+                </li>
+
+
+                <li class="songitem">
+                    <span>18</span>
+                    <img src="img/18.jpg" alt="">
+                    <h5> Nanne Nanne chusthu<br>
+                        <div class="subtitle">Venkatesh</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="18"></i>
+                </li>
+
+
+                <li class="songitem">
+                    <span>19</span>
+                    <img src="img/19.jpeg" alt="">
+                    <h5>Chamka chamka chamki rey <br>
+                        <div class="subtitle">DSP(Devi Sri Prasad)</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="19"></i>
+                </li>
+
+                <li class="songitem">
+                    <span>20</span>
+                    <img src="img/20.jpg" alt="">
+                    <h5>why this kolaveri the<br>
+                        <div class="subtitle">Dhanush</div>
+                    </h5>
+                    <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="20"></i>
+                </li>
+
+
+
+                
+            </div>
+        </div>
+
+        <!-- now getting the right bar for songside creation -->
+        <div class="songside">
+            <!-- creating the ul and target them in css -->
+            <nav>
+                <ul>
+                    <li>Discover <span></span></li>
+                    <li>My Librarry</li>
+                    <li>Radio</li>
+                </ul>
+
+                <!-- search bar -->
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="SearchMusic....">
+                </div>
+
+                <!-- creating the user -->
+                <div class="user">
+                    <img src="img/spotiii.jpeg" alt="">
+                </div>
+            </nav>
+            
+        <!-- user content  -->
+            <div class="content">
+                <h1>Pawan Kalyan (PSPK)</h1>
+                <p>you were the shadow to my light did you feel us another start fade <br> away afraid our aim is out   of sight wanna see us Alive</p>
+                <div class="buttons">
+                    <!-- create the two buttons over here -->
+                    <button>Play</button>
+                    <button>Follow</button>
+                </div>     
+            </div>
+
+        <!-- inserting the popular songs in the song side bar -->
+        <div class="popularsongs">
+                <div class="h4">
+                <h4>PopularSongs </h4>
+                
+                    <div class="songbuttons">
+                        <i class="bi bi-arrow-left-short" id="pop_songs_left"></i>
+                        <i class="bi bi-arrow-right-short" id="pop_songs_right"></i>
+                    </div>
+                </div>
+                
+                
+                <!--******************  -->
+            
+             <!-- pops_songs -->
+            <div class="popsongs">
+
+                <li class="songitem">
+                    <div class="imgplay">
+                        <img src="img/21.jpeg" alt="">
+                         <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="21"></i>
+                    </div>
+                
+                    <h5>HOli Holi <br>
+                        <div class="subtitle">Hesham Abdul Wahab</div>
+                    </h5>
+                </li>
+
+                <li class="songitem">
+                    <div class="imgplay">
+                        <img src="img/22.jpg" alt="">
+                         <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="22"></i>
+                    </div>
+                
+                    <h5>Killi Killi <br>
+                        <div class="subtitle">Mani Sharma</div>
+                    </h5>
+                </li>
+
+                <li class="songitem">
+                    <div class="imgplay">
+                        <img src="img/23.jpg" alt="">
+                         <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="23"></i>
+                    </div>
+                
+                    <h5>Panjaa <br>
+                        <div class="subtitle"> Yuvan Shankar Raja</div>
+                    </h5>
+                </li>
+
+                <li class="songitem">
+                    <div class="imgplay">
+                        <img src="img/24.jpg" alt="">
+                         <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="24"></i>
+                    </div>
+                
+                    <h5>Jaramochindhi <br>
+                        <div class="subtitle">Devi Sri Prasad</div>
+                    </h5>
+                </li>
+
+                <li class="songitem">
+                    <div class="imgplay">
+                        <img src="img/25.jpg" alt="">
+                         <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="25"></i>
+                    </div>
+                
+                    <h5>Mira Mira Messam <br>
+                        <div class="subtitle">Anup Rubens</div>
+                    </h5>
+                </li>
+
+                <li class="songitem">
+                    <div class="imgplay">
+                        <img src="img/26.webp" alt="">
+                         <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="26"></i>
+                    </div>
+                
+                    <h5>Maguva Maguva<br>
+                        <div class="subtitle">Thaman S</div>
+                    </h5>
+                </li>
+
+                <li class="songitem">
+                    <div class="imgplay">
+                        <img src="img/27.jpg" alt="">
+                         <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="27"></i>
+                    </div>
+                
+                    <h5>Aradugula Bullet <br>
+                        <div class="subtitle">Devi Sri Prasad</div>
+                    </h5>
+                </li>
+
+                <li class="songitem">
+                    <div class="imgplay">
+                        <img src="img/28.webp" alt="">
+                         <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="28"></i>
+                    </div>
+                
+                    <h5>Lala Bheemla<br>
+                        <div class="subtitle">Thaman S</div>
+                    </h5>
+                </li>
+
+                <li class="songitem">
+                    <div class="imgplay">
+                        <img src="img/29.jpg" alt="">
+                         <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="29"></i>
+                    </div>
+                
+                    <h5>Akassam Ammayaithe <br>
+                        <div class="subtitle">Devi Sri Prasad</div>
+                    </h5>
+                </li>
+
+                <li class="songitem">
+                    <div class="imgplay">
+                        <img src="img/30.jpg" alt="">
+                         <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="30"></i>
+                    </div>
+                
+                    <h5>Gelupu Thalupule <br>
+                        <div class="subtitle">Mani Sharma</div>
+                    </h5>
+                </li>
+
+                <li class="songitem">
+                    <div class="imgplay">
+                        <img src="img/31.jpg" alt="">
+                         <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="31"></i>
+                    </div>
+                
+                    <h5>Travelling Solider <br>
+                        <div class="subtitle">Ramana Gogula</div>
+                    </h5>
+                </li>
+
+                <li class="songitem">
+                    <div class="imgplay">
+                        <img src="img/32.jpg" alt="">
+                         <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="32"></i>
+                    </div>
+                
+                    <h5>Naalo Nuvvuvoka <br>
+                        <div class="subtitle">Ramana Gogula</div>
+                    </h5>
+                </li>
+
+                <li class="songitem">
+                    <div class="imgplay">
+                        <img src="img/33.webp" alt="">
+                         <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="33"></i>
+                    </div>
+                
+                    <h5>Ye Mera jahaa <br>
+                        <div class="subtitle">Devi Sri Prasad</div>
+                    </h5>
+                </li>
+
+                <li class="songitem">
+                    <div class="imgplay">
+                        <img src="img/34.jpeg" alt="">
+                         <!-- add here the paly button -->
+                    <i class="bi playlsitplay bi-play-circle-fill" id="34"></i>
+                    </div>
+                
+                    <h5>Jalsa Jalsa <br>
+                        <div class="subtitle">Devi Sri Prasadr</div>
+                    </h5>
+                </li>
+            </div>
+        </div>
+
+         <!-- popular artist -->
+         <div class="popular_artist">
+            <div class="h4">
+                <h4>Popular Artists </h4>
+                    <div class="songbuttons">
+                        <i class="bi bi-arrow-left-short" id="pop_artist_left"></i>
+                        <i class="bi bi-arrow-right-short" id="pop_artist_right"></i>
+                    </div>
+                </div>
+                <div class="Items">
+                    <!-- list of items -->
+                    <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                    <!-- 2 -->
+                    <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                    <!-- 3 -->
+                    <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                    <!-- 4   -->
+                    <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                    <!-- 5 -->
+                    <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                    <!--   6 -->
+                    <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                    <!-- 7 -->
+                    <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                    <!-- 8 -->
+                    <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                    <!-- 9 -->
+                    <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                    <!-- 10 -->
+                    <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                     <!-- 11 -->
+                     <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                     <!-- 12 -->
+                     <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                     <!-- 13 -->
+                     <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                     <!-- 14 -->
+                     <li>
+                        <img src="img/image.png"alt="">
+                    </li>
+
+                     <!-- 15 -->
+                     <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                     <!-- 16 -->
+                     <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                     <!-- 17 -->
+                     <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                     <!-- 18 -->
+                     <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                     <!-- 19 -->
+                     <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                     <!-- 20 -->
+                     <li>
+                        <img src="img/image.png" alt="">
+                    </li>
+
+                     
+
+                </div>
+        
+         </div>
+        
+
+        </div>
+
+
+
+        <!-- now we get the master play for getting the buttons  -->
+        <div class="masterplay">
+            <div class="wave" id="musicwave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+
+            <!-- when the music hits,then the poster should be display on the masterplay area -->
+           <img src="img/1.jpg" alt="" id="posterformasterply">
+           <!-- showing the title card and author name -->
+           <h5 id="title">Nature 
+            <div class="subtitle">WorldNature</div>
+           </h5>
+
+
+           <!-- create the master play,pause,play and next icons, -->
+
+           <div class="icons">
+            <i class="bi shuffle bi-music-note-beamed" id="shuffle">Next</i>
+            <i class="bi bi-skip-start-fill" id="back"></i>
+            <i class="bi bi-play-fill" id="playbutton"></i>
+            <i class="bi bi-skip-end-fill" id="next"></i>
+            <i class="bi bi-cloud-arrow-down-fill" id="downloadmusic"></i>
+           </div>
+
+           <!-- current start time -->
+           <span id="currentstarttime">0:00</span>
+           <!-- create the seekbar with range -->
+           <div class="seekbar">
+                 <input type="range" name="" id="bar" min="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <!-- creating the dot -->
+                <div class="dot" id="dot"></div>
+           </div>
+
+           <!-- current time should be ended -->
+           <span id="currentendtime">0:30</span>
+           <!-- set the volume -->
+           <div class="volumebar">
+            <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+            <input type="range" name="" id="volume" min="0" max="100">
+            <div class="volbar1" id="volbar"></div>
+            <div class="dot" id="voldot"></div>
+           </div>
+
+        </div>
+
+
+    </header>
+   
+    
+    </body>
+    <!--connecting the css using script tag-->
+    <script src="app.js"></script>
+</html>
